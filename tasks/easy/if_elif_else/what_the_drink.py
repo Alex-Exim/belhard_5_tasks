@@ -23,6 +23,15 @@ what_you_drink(30) == "можно виски"
 
 def what_you_drink(age: int) -> str:
     result = None
+    if age < 14:
+        result = f"можно сок"
+    elif age in range(14, 18):
+        result = f"можно кока-колу"
+    elif age in range(18, 21):
+        result = f"можно пиво"
+    elif age > 21:
+        result = f"можно виски"
+
     return result
 
 

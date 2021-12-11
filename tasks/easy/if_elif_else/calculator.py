@@ -33,7 +33,7 @@ def calculator(num1: int, num2: int, operation: str) -> Union[int, float, str]:
         elif operation == "/":
             result = num1 / num2
         else:
-            result = "Неизвестная операция"
+            result = f"Неизвестная операция"
     return result
 
 

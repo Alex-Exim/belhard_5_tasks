@@ -32,7 +32,13 @@ def replacer(check_str: str, search_str: str, replace_str: str) -> str:
     :return: измененная строка для проверки или строка "Ошибка!"
     :rtype: str
     """
-    result = None
+    words_check_str = set(check_str.split(" "))
+    words_search_str = set(search_str.split(" "))
+    if words_search_str.issubset(words_check_str):
+        result = check_str.replace(search_str, replace_str)
+    else:
+        result = f"Ошибка!"
+
     return result
 
 
