@@ -35,9 +35,9 @@ def replacer(check_str: str, search_str: str, replace_str: str) -> str:
     words_check_str = set(check_str.split(" "))
     words_search_str = set(search_str.split(" "))
     if words_search_str.issubset(words_check_str):
-        result = check_str.replace(search_str, replace_str)
+        result = check_str.replace(search_str, replace_str).capitalize()
     else:
-        result = f"Ошибка!"
+        result = "Ошибка!"
 
     return result
 

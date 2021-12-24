@@ -25,7 +25,7 @@ def hide_card_numbers(card_number: str) -> str:
     if len(card_number) == 16:
         result = card_number[:4] + "********" + card_number[-4:]
     else:
-        result = f"Ошибка"
+        result = "Ошибка"
     return result
 
 

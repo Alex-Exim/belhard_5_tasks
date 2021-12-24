@@ -45,7 +45,7 @@ def praise(some_gift):
 
 
 def cook_dinner():
-    print('\nПриготовить ужин')
+    print('Приготовить ужин')
 
 
 def random_gift():
@@ -68,4 +68,3 @@ if __name__ == '__main__':
         praise(gift)
     finally:
         cook_dinner()
-
